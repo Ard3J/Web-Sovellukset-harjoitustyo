@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Recipe Helper</title>
+</head>
+<body>
+    <div id="input_area">
+        <h1>Recipe helper</h1>
+        <p>Write ingredients that you want to cook from. You can either choose anything that includes those, limit by extra ingredients that you need to acquire(plus some staples) or get random recipe. Up to six result are given.</p>       
+        <input type="search" id="ingredients_input" placeholder="Ingredients">
+        <div id="input">
+            <div id="limiter_buttons">
+                <input type="radio" name="limiter" value="any" checked>
+                <label>Any</label>
+                <input type="radio" name="limiter" value="limited">
+                <label>Missing ingredients</label>
+                <select id="missing_ingredients">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3" selected>3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+                <input type="radio" name="limiter" value="random">
+                <label>Random</label>
+                <button type="button" name="get_button">Get recipies</button>
+            </div>
+        </div>
+    </div>
+    <div id="search_results">
+        <h2 id="status" hidden>Searching...</h2>
+        <section class="recipe_list" hidden>
+            <h3>Search results:</h3>
+            <div id="recipe_cards">
+                
+            </div>
+        </section>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./js/config.js"></script>
+    <script src="./js/MealCard.js"></script>
+    <script src="./js/functions.js"></script>
+</body>
+</html>

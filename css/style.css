@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../images/fridge.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 50px;
+    margin-top: 100px;
+}
+
+#input_area {
+    margin: 5px;
+    padding: 20px;
+    border: 3px solid rgb(70, 70, 70);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(2px);
+}
+
+#ingredients_input {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    min-width: 100px;
+    min-height: 75px;
+    max-width: 1000px;
+    border-radius: 8px;
+    border: 2px solid rgb(70, 70, 70);
+    background-color: white;
+    min-width: 250px;
+}
+
+#limiter_buttons {
+    padding: 5px;
+    margin: 5px;
+}
+
+select {
+    padding: 5px;
+    border-radius: 8px;
+    border: 2px solid rgb(70, 70, 70);
+    background-color: white;
+}
+
+button {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 8px;
+    border: 2px solid rgb(70, 70, 70);
+    background-color: #eee;
+    font-size: 1rem;
+    transition: all 0.1s ease;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+button:active {
+    background-color:  #bbb;
+    transform: scale(0.95);
+}
+
+#search_results {
+    margin: 5px;
+    padding: 20px;
+    border: 3px solid rgb(70, 70, 70);
+    border-radius: 8px;
+    display: block;
+    overflow: hidden;
+    min-height: 50px;
+    background-color: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(2px);
+}
+
+#recipe_cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    height: auto;
+}
+
+meal-card {
+    padding: 10px;
+    display: block;
+    border: 3px solid rgb(70, 70, 70);
+    border-radius: 8px;
+}
